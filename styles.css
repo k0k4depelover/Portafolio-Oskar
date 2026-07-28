@@ -33,3 +33,9 @@
   margin: 10px 5% 10px 10px;
   justify-content: right;
 }
+
+.section{
+  padding: 20px 50px 20px  50px;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+}
