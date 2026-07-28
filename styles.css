@@ -1,0 +1,12 @@
+.body{
+  background-color: bisque;
+}
+
+.header{
+  background-color: #fff;
+}
+
+section{
+  background-color: #fff;
+  padding: 30px auto;
+}
