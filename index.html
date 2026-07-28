@@ -2,32 +2,106 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Portafolio Oskar</title>
+    <title>Portafolio | Oskar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <!-- Agrupamos logo y nombre en un contenedor para alinearlos -->
-        <div class="brand">
-            <a href="index.html">
-                <img src="img/diagram-project-svgrepo-com.svg" alt="Logo de proyecto" width="60" height="60"/>
-            </a>
-            <h1>Oskar Saul Cermeno Jimenez</h1>
-        </div>
-
-        <!-- Navegación -->
         <nav>
             <ul>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="cv.html">Curriculum Vitae</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li> <a href= "#sobre-mi">Sobre mi </a> </li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Curriculum Vitae</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Contenido principal -->
+        <section id="sobre-mi">
+            <h1>Hola, soy Oskar</h1>
+            <h2>Desarrollador Backend</h2>
+            <p>
+                Me especializo en Diseñar e implementar arquitecturas de Software, API Rest,
+                modelado de bases de datos y arquitecturas distribuidas.
+            </p>
+            <p>
+                <a href="#contacto">Hablemos</a> |
+                <a href="https://github.com/k0k4depelover">Github</a>
+                <a href="oskarcermeno1@gmail.com"">Correo Electronico</a>
+            </p>
+        </section>
+
+        <section>
+
+            <article>
+            <h2>Proyecto Distrib | Java SpringBoot</h2>
+                <p>
+                    <strong>Descripcion:</strong>  Arquitectura distribuida para una arquitectura distribuida
+                    inicialmente planteada para C#, sin embargo adaptada para Java SpringBoot.
+                </p>
+                    <h4>Stack Tecnologico: </h4>
+                    <ul>
+                        <li>Gestor de Contenedores : Docker Compose </li>
+                        <li>Gestor de Versiones : Github </li>
+                        <li>Lenguaje/Framework : Java SpringBoot </li>
+                        <li>Infraestructura: RabbitQM /  Docker YML </li>
+                        <li> Bases de Datos: Postgresql  / Redis RateLimiter</li>
+                    </ul>
+
+                    <h4>Estructura / Arquitectura</h4>
+                    <p>[ Diagrama de arquitectura o flujo de datos de la API / microservicio ]</p>
+
+
+                    <p>
+                        <a href="https://github.com/k0k4depelover/Distribt-Java" target="_blank">Ver Codigo en Github</a>
+                        <a href="#" target="_blank">Documentacion API (Swagger/Postman)</a>
+                    </p>
+
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Proyecto Multi-lenguaje y Red Neuronal</h3>
+                <p>
+                    <strong>Descripcion: </strong> Arquitectura distruibuida multi-lenguaje Python FastAPI y Java SpringBoot
+                    comunicados mediante gRPC, RateLimiter usando Redis, y WebSockets
+                </p>
+
+                <h4>Stack Tecnologico: </h4>
+                    <ul>
+                        <li>Gestor de Contenedores : Docker Compose </li>
+                        <li>Gestor de Versiones : Github </li>
+                        <li>Lenguaje/Framework : Java SpringBoot / Python FastAPI </li>
+                        <li>Infraestructura: Docker YML / Netflix Eureka </li>
+                        <li> Bases de Datos: Postgresql  / Redis RateLimiter / QDRANT / MongoDB</li>
+                    </ul>
+
+                <h4>Estructura / Arquitectura</h4>
+                <p>[ Diagrama de arquitectura o flujo de datos de la API / microservicio ]</p>
+
+
+                <p>
+                    <a href="https://github.com/k0k4depelover/Distribt-Java" target="_blank">Ver Codigo en Github</a>
+                    <a href="#" target="_blank">Documentacion API (Swagger/Postman)</a>
+                </p>
+
+                <p>
+                    <a href="https://github.com/k0k4depelover/fashion-mnist" target="_blank">Ver Repo en Github</a>
+                    <a href="git@github.com:k0k4depelover/distrib-system-2.git" target="_blank">Ver Repo en Github</a>
+                    <a href="#" target="_blank">Documentacion API (Swagger/Postman)</a>
+                </p>
+
+            </article>
+        </section>
+
+
+        <section>
+
+        </section>
+
     </main>
 
     <footer>
