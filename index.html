@@ -7,157 +7,50 @@
 </head>
 
 <body class="body">
-    <header class="header">
-        <nav>
-            <ul>
-                <li> <a href= "#sobre-mi">Sobre mi </a> </li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#habilidades">Curriculum Vitae</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header>
+
+    <div class="typing-container">
+        Desarrollador <span class="typing-text"></span>
+    </div>
+
+    <h1 class="nombre-dev">Oskar Cermeño</h1>
+
+    <p class="descripcion">
+        Creando soluciones eficientes.
+    </p>
+
     </header>
 
-    <main class="main">
-        <section id="sobre-mi">
-            <div class="info-sobre-mi">
-                <h1>Oskar Cermeño</h1>
-                <h2>Desarrollador Backend</h2>
-                <p>
-                    Me especializo en Diseñar e implementar arquitecturas de Software, API Rest,
-                    modelado de bases de datos y arquitecturas distribuidas.
-                </p>
-            </div>
+    <main class="contenido-pagina">
+        <h2>Proyectos</h2>
 
-            <div class="img-sobre-mi">
-                <img src="./img/datastore-svgrepo-com.svg" alt="img-backend" height="200px" width="200px">
-            </div>
+        <div class="punto-morado morado-izquierda"></div>
+        <div class="punto-morado morado-derecha"></div>
 
-        </section>
-
-        <section id="proyectos">
-
-        <span class="section">Proyectos</span>
-            <div class="proyecto-articulo">
-
-                <article >
-            <h2>Proyecto Distrib | Java SpringBoot</h2>
-                <p>
-                    <strong>Descripcion:</strong>  Arquitectura distribuida para una arquitectura distribuida
-                    inicialmente planteada para C#, sin embargo adaptada para Java SpringBoot.
-                </p>
-                    <h4>Stack Tecnologico: </h4>
-                    <ul>
-                        <li>Gestor de Contenedores : Docker Compose </li>
-                        <li>Gestor de Versiones : Github </li>
-                        <li>Lenguaje/Framework : Java SpringBoot </li>
-                        <li>Infraestructura: RabbitQM /  Docker YML </li>
-                        <li> Bases de Datos: Postgresql  / Redis RateLimiter</li>
-                    </ul>
-
-                    <h4>Estructura / Arquitectura</h4>
-                    <p>[ Diagrama de arquitectura o flujo de datos de la API / microservicio ]</p>
+        <div class="punto-azul azul-izquierda"></div>
+        <div class="punto-azul azul-derecha"></div>
 
 
-                    <p>
-                        <a href="https://github.com/k0k4depelover/Distribt-Java" target="_blank">Ver Codigo en Github</a>
+        <div class="tarjeta">
+            <h3>Proyecto A</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis omnis expedita vitae ipsa,
+                in corrupti recusandae quibusdam veniam, culpa doloremque, ut exercitationem a nam voluptates
+                dicta temporibus adipisci eum. Vero.
+            </p>
+        </div>
 
-                    </p>
-
-            </article>
-            </div>
-
-
-            <hr>
-
-            <div class="proyecto-articulo">
-                <article>
-                <h3>Proyecto Multi-lenguaje y Red Neuronal</h3>
-                <p>
-                    <strong>Descripcion: </strong> Arquitectura distruibuida multi-lenguaje Python FastAPI y Java SpringBoot
-                    comunicados mediante gRPC, RateLimiter usando Redis, y WebSockets
-                </p>
-
-                <h4>Stack Tecnologico: </h4>
-                    <ul>
-                        <li>Gestor de Contenedores : Docker Compose </li>
-                        <li>Gestor de Versiones : Github </li>
-                        <li>Lenguaje/Framework : Java SpringBoot / Python FastAPI </li>
-                        <li>Infraestructura: Docker YML / Netflix Eureka </li>
-                        <li> Bases de Datos: Postgresql  / Redis RateLimiter / QDRANT / MongoDB</li>
-                    </ul>
-
-                <h4>Estructura / Arquitectura</h4>
-                <p>[ Diagrama de arquitectura o flujo de datos de la API / microservicio ]</p>
-
-                <p>
-                    <a href="https://github.com/k0k4depelover/fashion-mnist" target="_blank">Ver Repo en Github</a>
-                </p>
-
-                <p>
-                    <a href="git@github.com:k0k4depelover/distrib-system-2.git" target="_blank">Ver Repo en Github</a>
-                </p>
-            </article>
-            </div>
-
-        </section>
-
-        <section id="habilidades">
-            <span class="section">Stack General</span>
-            <div class="carta-habilidades">
-                <h4>Lenguajes | Frameworks</h4>
-                <ul>
-                    <li> Java - SpringBoot 3</li>
-                    <li> Python - FastAPI</li>
-                    <li> C# - .NET</li>
-                </ul>
-            </div>
-
-            <div class="carta-habilidades">
-                <h4>Bases de Datos</h4>
-                <ul>
-                    <li> SQL - Postgresql | MySQL | Microsoft SQL Server</li>
-                    <li> NoSQL - QDrant | MongoDB</li>
-                </ul>
-            </div>
-
-            <div class="carta-habilidades" >
-                <h4>Infraestructura</h4>
-                <ul>
-                    <li> Docker </li>
-                    <li> RabbitQM</li>
-                    <li>Netflix Eureka</li>
-                    <li> NGINX </li>
-                </ul>
-
-            </div>
-        </section>
-
-
-        <section id="contacto">
-            <span class="section">Contactemonos</span>
-           <h2>Contacto</h2>
-           <p>
-                Si necesitas diseñar o implementar una arquitectur, no dudes en contactarme
-                y hablamos sobre sobre la construccion de tu negocio digital, ya sea desde 0, mantenerlo,
-                escalarlo o incluso documentar arquitectura existente.
-           </p>
-            <div class="contacto">
-                <a href="mailto:oskarcermeno1@gmail.com">oskarcermeno1@gmail.com</a>
-                <a href="https://github.com/k0k4depelover" target="_blank">github.com/k0k4depelover</a>
-            </div>
-
-
-        </section>
+        <div class="tarjeta">
+            <h3>Proyecto B</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti, repellat quasi culpa
+                 autem a consequatur. Sit nostrum tempore nobis veniam nam, quibusdam quam blanditiis possimus
+                  voluptatum odit facilis laudantium!
+            </p>
+        </div>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Oskar Cermeño.
-            <img src="#" alt="#">
-            <img src="#" alt="#">
-            <img src="#" alt="#">
-        </p>
+
     </footer>
 
 

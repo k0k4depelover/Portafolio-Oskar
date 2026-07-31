@@ -1,0 +1,64 @@
+/* Reajuste global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Selector de la etiqueta body (sin el punto) */
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.punto-azul, .punto-morado{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: blur(200px);
+  position: absolute;
+
+}
+
+.punto-azul{
+  background-color: blue;
+}
+
+.punto-morado{
+  background-color: blueviolet;
+}
+
+.morado-izquierda{
+  top: -60px;
+  left: -60px;
+}
+
+.morado-derecha{
+  top: -60px;
+  right: -60px;
+}
+
+.azul-izquierda{
+  bottom: -60px;
+  left: -60px;
+}
+
+.azul-derecha{
+  bottom: -60px;
+  right: -60px;
+}
+
+
+
+.nombre-dev{
+
+  font-size: 100px;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: green;
+}
