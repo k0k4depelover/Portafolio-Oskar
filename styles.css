@@ -10,55 +10,173 @@ body {
   background-color: #000000;
   color: #ffffff;
   font-family: system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+
+
+.info-head{
+  position: relative;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 20px;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(-45deg, #000000, #0b0110,   #0b0117, #000000);
+  background-size: 400% 400%;
+
+  animation: aurora 12s ease infinite;
+  animation: aurora 12s ease infinite fadeOutTimeline linear both;
+  animation-timeline: auto, scroll(root);
+  animation-range: auto, exit 0% exit 100%;
 }
 
-.punto-azul, .punto-morado{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  filter: blur(200px);
+@keyframes aurora {
+  0% {background-position: 0% 50%;}
+  6.25% {background-position: 12.5% 50%;}
+  12.5% {background-position: 25% 50%;}
+  25% {background-position: 50% 50%;}
+  50% {background-position: 100% 50%;}
+  75% {background-position: 50% 50%;}
+  87.5% {background-position: 25% 50%;}
+  93.75%{background-position: 12.5% 50%;}
+  100% {background-position: 0% 50% ;}
+}
+
+@keyframes fadeOutTimeline {
+  to{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+
+.texto-magico{
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.texto-magico::before{
+  content: "";
+  animation: cambiarTexto 12s infinite;
+}
+
+.texto-magico::after{
+  content: "";
   position: absolute;
-
+  right: -8px;
+  top: 10%;
+  height: 80%;
+  width: 3px;
+  background-color:#4ade80;
+  animation: parpadeoCursor 0.8s infinite;
 }
 
-.punto-azul{
-  background-color: blue;
+@keyframes cambiarTexto {
+
+  0%   { content:"F"; }
+  1%   { content:"Fr"; }
+  2%   { content:"Fro"; }
+  3%   { content:"Fron"; }
+  4%   { content:"Front"; }
+  5%   { content:"Fronte"; }
+  6%   { content:"Fronten"; }
+  7%   { content:"Frontend"; }
+  8%   { content:"Frontend D"; }
+  9%   { content:"Frontend De"; }
+  10%  { content:"Frontend Dev"; }
+  11%  { content:"Frontend Deve"; }
+  12%  { content:"Frontend Devel"; }
+  13%  { content:"Frontend Develo"; }
+  14%  { content:"Frontend Develop"; }
+  15%  { content:"Frontend Develope"; }
+  16%  { content:"Frontend Developer"; }
+  19%  { content:"Frontend Developer"; }
+
+
+  20%  { content:""; }
+
+
+  21%  { content:"B"; }
+  22%  { content:"Ba"; }
+  23%  { content:"Bac"; }
+  24%  { content:"Back"; }
+  25%  { content:"Backe"; }
+  26%  { content:"Backen"; }
+  27%  { content:"Backend"; }
+  28%  { content:"Backend D"; }
+  29%  { content:"Backend De"; }
+  30%  { content:"Backend Dev"; }
+  31%  { content:"Backend Deve"; }
+  32%  { content:"Backend Devel"; }
+  33%  { content:"Backend Develo"; }
+  34%  { content:"Backend Develop"; }
+  35%  { content:"Backend Develope"; }
+  36%  { content:"Backend Developer"; }
+  39%  { content:"Backend Developer"; }
+
+
+  47%  { content:""; }
+
+  /* AdminSys (41%–49%) */
+  48%  { content:"A"; }
+  49%  { content:"Ad"; }
+  50%  { content:"Adm"; }
+  51%  { content:"Admi"; }
+  52%  { content:"Admin"; }
+  53%  { content:"AdminS"; }
+  54%  { content:"AdminSy"; }
+  55%  { content:"AdminSys"; }
+  56%  { content:"AdminSys"; }
+
+
+  60%  { content:""; }
+
+  61%  { content:"A"; }
+  62%  { content:"An"; }
+  63%  { content:"Ana"; }
+  64%  { content:"Anal"; }
+  65%  { content:"Anali"; }
+  66%  { content:"Analis"; }
+  67%  { content:"Analisis"; }
+  68%  { content:"Analisis d"; }
+  69%  { content:"Analisis de"; }
+  70%  { content:"Analisis de D"; }
+  71%  { content:"Analisis de Da"; }
+  72%  { content:"Analisis de Dat"; }
+  73%  { content:"Analisis de Datos"; }
+  74%  { content:"Analisis de Datos"; } /* pausa */
+
+  75%  { content:""; }
+
+  80%  { content:"M"; }
+  81%  { content:"Ma"; }
+  82%  { content:"Mac"; }
+  83%  { content:"Mach"; }
+  84%  { content:"Machi"; }
+  85%  { content:"Machin"; }
+  86%  { content:"Machine"; }
+  87%  { content:"Machine L"; }
+  88%  { content:"Machine Le"; }
+  89%  { content:"Machine Lea"; }
+  90%  { content:"Machine Lear"; }
+  91%  { content:"Machine Learn"; }
+  92%  { content:"Machine Learni"; }
+  93%  { content:"Machine Learnin"; }
+  94%  { content:"Machine Learning"; }
+  100% { content:"Machine Learning"; }
 }
-
-.punto-morado{
-  background-color: blueviolet;
-}
-
-.morado-izquierda{
-  top: -60px;
-  left: -60px;
-}
-
-.morado-derecha{
-  top: -60px;
-  right: -60px;
-}
-
-.azul-izquierda{
-  bottom: -60px;
-  left: -60px;
-}
-
-.azul-derecha{
-  bottom: -60px;
-  right: -60px;
-}
-
-
 
 .nombre-dev{
-
-  font-size: 100px;
+  font-size: 95px;
   font-family: system-ui, -apple-system, sans-serif;
   color: green;
 }
