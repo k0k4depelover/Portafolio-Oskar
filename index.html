@@ -2,56 +2,168 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Portafolio | Oskar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Oskar Cermeño</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 
-
     <header class="info-head">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">Oskar<span>.</span>Cermeño</a>
 
-    <div class="typing-container">
-        <span class="texto-magico"></span>
-    </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-    <div class="brillo-nombre"></div>
-    <h1 class="nombre-dev">Oskar Cermeño</h1>
-
-
-    <p class="descripcion">
-        Creando soluciones eficientes.
-    </p>
-
-    <button class="contacto-btn"> <span>Contactar</span> </button>
-
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#" class="nav-cv">Descargar CV</a></li>
+            </ul>
+        </div>
     </header>
 
     <main class="contenido-pagina">
-        <h2>Proyectos</h2>
 
-        <div class="tarjeta">
-            <h3>Proyecto A</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis omnis expedita vitae ipsa,
-                in corrupti recusandae quibusdam veniam, culpa doloremque, ut exercitationem a nam voluptates
-                dicta temporibus adipisci eum. Vero.
-            </p>
-        </div>
+        <section class="hero-section" id="inicio">
+            <div class="brillo-nombre"></div>
 
-        <div class="tarjeta">
-            <h3>Proyecto B</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti, repellat quasi culpa
-                 autem a consequatur. Sit nostrum tempore nobis veniam nam, quibusdam quam blanditiis possimus
-                  voluptatum odit facilis laudantium!
+            <div class="typing-container">
+                <span class="texto-magico"></span>
+            </div>
+
+            <h1 class="nombre-dev">Oskar Cermeño</h1>
+
+            <p class="descripcion">
+                Creando soluciones eficientes.
             </p>
-        </div>
+
+            <div class="habilidades">
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">SpringBoot</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">.NET</span>
+                <span class="skill-badge">SQL</span>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="titulo-seccion">Proyectos</h2>
+
+            <div class="proyectos-grid">
+
+                <a href="ProyectoA.html" class="tarjeta proyecto-card">
+                    <h3>Sistema Distribuido II</h3>
+                    <p>
+                        Consiste en un conjunto de microservicios trabajando en conjunto
+                        para la subida e indexacion de fotografias de prendas mediante ElasticSearch, el objetivo del
+                        proyecto es demostrar el dominio de las distintas tecnologias, ademas del
+                        caché de los datos, sesiones stateful y manipulacion de headers con Publishers
+                        reactivos asincronicos, y mucho mas!
+                    </p>
+                    <div class="proyecto-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="proyecto-status">
+                        <span>EN PROGRESO</span>
+                    </div>
+                    <span class="ver-mas">Ver proyecto →</span>
+                </a>
+
+                <a href="ProyectoB.html" class="tarjeta proyecto-card">
+                    <h3>Fashion MNIST API</h3>
+                    <p>
+                        Red neuronal creada desde 0, features almacenados mediante Numpy y preprocesamiento
+                        de archivos mediante PIL a escala de grises, escalado en el tamaño de las imagenes (28x28)
+                        ademas del contraste para un mejor reconocimiento por parte del modelo.
+                    </p>
+                    <div class="proyecto-tags">
+                        <span>JavaScript</span>
+                        <span>SQL</span>
+                        <span>COMPLETADO</span>
+                    </div>
+                    <span class="ver-mas">Ver proyecto →</span>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="sobre-mi">
+            <h2 class="titulo-seccion">Sobre mí</h2>
+            <div class="tarjeta">
+                <p class="sobre-mi-texto">
+                    Soy desarrollador y me enfoco en construir productos digitales rápidos,
+                    accesibles y fáciles de mantener. Me muevo cómodo entre frontend y backend,
+                    y disfruto resolver problemas con soluciones simples y bien pensadas.
+                </p>
+                <div class="habilidades">
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">SpringBoot</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">.NET</span>
+                <span class="skill-badge">SQL</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <div class="tarjeta">
+                <p class="sobre-mi-texto">
+                    ¿Tienes un proyecto en mente? Escríbeme y hablamos.
+                </p>
+
+                <div class="contacto-info">
+                    <a href="mailto:ocermenoj@miumg.edu.gt" class="contacto-link">ocermenoj@miumg.edu.gt</a>
+                    <a href="https://github.com/k0k4depelover" target="_blank" rel="noopener" class="contacto-link">GitHub</a>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <footer>
+    <button class="contacto-btn">
+        <span>Contactar</span>
+    </button>
 
+    <footer>
+        <span>Oskar Cermeño</span>
+        <div class="footer-social">
+            <a href="https://github.com/k0k4depelover" target="_blank" rel="noopener">GitHub</a>
+        </div>
     </footer>
 
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', () => {
+            const abierto = navLinks.classList.toggle('abierto');
+            navToggle.setAttribute('aria-expanded', abierto);
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('abierto');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        document.querySelector('.contacto-btn').addEventListener('click', () => {
+            document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 
 </body>
 </html>

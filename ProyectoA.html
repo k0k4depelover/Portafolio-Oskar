@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto A | Oskar Cermeño</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <header class="info-head">
+        <div class="nav-container">
+            <a href="index.html#inicio" class="logo">Oskar<span>.</span>Cermeño</a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#proyectos">Proyectos</a></li>
+                <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="#" class="nav-cv">Descargar CV</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="proyecto-detalle">
+        <a href="index.html#proyectos" class="volver">← Volver a proyectos</a>
+
+        <h1>Sistema Distribuido II</h1>
+
+        <div class="proyecto-tags" style="margin-bottom: 1.5rem;">
+            <span>React</span>
+            <span>Node.js</span>
+        </div>
+
+        <p class="sobre-mi-texto">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis omnis expedita
+            vitae ipsa, in corrupti recusandae quibusdam veniam, culpa doloremque, ut
+            exercitationem a nam voluptates dicta temporibus adipisci eum. Vero.
+        </p>
+
+        <p class="sobre-mi-texto">
+            Aquí puedes describir el problema que resolvió el proyecto, tu rol específico,
+            las decisiones técnicas más relevantes y el resultado final. Añade capturas de
+            pantalla, un enlace al repositorio o una demo en vivo cuando estén listos.
+        </p>
+
+        <div class="contacto-info">
+            <a href="#" class="contacto-link" target="_blank" rel="noopener">Ver repositorio</a>
+            <a href="#" class="contacto-link" target="_blank" rel="noopener">Ver demo</a>
+        </div>
+    </main>
+
+    <footer>
+        <span>© 2026 Oskar Cermeño</span>
+        <div class="footer-social">
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            const abierto = navLinks.classList.toggle('abierto');
+            navToggle.setAttribute('aria-expanded', abierto);
+        });
+    </script>
+
+</body>
+</html>

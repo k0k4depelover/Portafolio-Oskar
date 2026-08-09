@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion MNIST | Oskar Cermeño</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <header class="info-head">
+        <div class="nav-container">
+            <a href="index.html#inicio" class="logo">Oskar<span>.</span>Cermeño</a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#proyectos">Proyectos</a></li>
+                <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="#" class="nav-cv">Descargar CV</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="proyecto-detalle">
+        <a href="index.html#proyectos" class="volver">← Volver a proyectos</a>
+
+        <h1>Fashion MNIST</h1>
+
+        <div class="proyecto-tags" style="margin-bottom: 1.5rem;">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>Numpy</span>
+            <span>QDrant</span>
+            <span>MongoDB</span>
+
+        </div>
+
+        <p class="sobre-mi-texto">
+            Red neuronal implmentada desde 0.
+
+        </p>
+
+        <p class="sobre-mi-texto">
+
+        </p>
+
+        <div class="contacto-info">
+            <a href="#" class="contacto-link" target="_blank" rel="noopener">Ver repositorio</a>
+            <a href="#" class="contacto-link" target="_blank" rel="noopener">Ver demo</a>
+        </div>
+    </main>
+
+    <footer>
+        <span>2026 Oskar Cermeño</span>
+        <div class="footer-social">
+            <a href="https://github.com/k0k4depelover" target="_blank" rel="noopener">GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            const abierto = navLinks.classList.toggle('abierto');
+            navToggle.setAttribute('aria-expanded', abierto);
+        });
+    </script>
+
+</body>
+</html>
