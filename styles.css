@@ -453,13 +453,22 @@ section[id] {
   margin-top: 0.9rem;
 }
 
-.proyecto-status span {
+.proyecto-status .status {
   font-size: 0.75rem;
-  color: var(--amarillo);
-  border: 1px solid var(--amarillo);
   border-radius: 20em;
   padding: 0.2em 0.7em;
 }
+
+.proyecto-status .progreso{
+    color: var(--amarillo);
+  border: 1px solid var(--amarillo);
+}
+
+.proyecto-status .completado {
+  color: var(--verde);
+  border: 1px solid var(--verde-fuerte);
+}
+
 
 .ver-mas {
   display: inline-block;
